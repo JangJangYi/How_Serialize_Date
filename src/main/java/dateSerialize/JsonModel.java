@@ -15,8 +15,8 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class JsonModel {
     private String name;
+//    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss", timezone = "Asia/Seoul")
-    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
     private LocalDateTime requestDateTime;
 
 }
